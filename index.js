@@ -3,8 +3,8 @@ export default {
     const upstreamUrl = new URL(request.url);
     
     // Changing the target backend server configuration
-    upstreamUrl.hostname = "node.dhmodmail.co.uk";
-    upstreamUrl.port = "25576";
+    upstreamUrl.hostname = "http://fi2.elysiannodes.uk";
+    upstreamUrl.port = "2521";
     upstreamUrl.protocol = "http:"; // Using HTTPS
 
     const newHeaders = new Headers(request.headers);
